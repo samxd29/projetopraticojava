@@ -1,0 +1,11 @@
+
+public class conta {
+	double saldo;
+	int agencia;
+	int numero;
+	String titular;
+	
+	//metodo : uma maneira de fazer as coisas
+	
+	deposita(double valor)
+}

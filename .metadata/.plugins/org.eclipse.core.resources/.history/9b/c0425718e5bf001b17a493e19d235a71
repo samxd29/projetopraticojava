@@ -1,0 +1,38 @@
+public class FluxoComErro {
+
+    public static void main(String[] args) {
+        System.out.println("Ini do main");
+        //Para tratarmos uma exceção, que pode ocorrer enquanto nosso programa esta sendo executado, precisamos 
+        //tratá-la antecipadamente com um bloco de código específico.
+        try {
+            metodo1();
+        } catch(ArithmeticException| MinhaExcecao ex) {
+            String msg = ex.getMessage();
+            System.out.println("Exception " + msg);
+            ex.printStackTrace();
+        }
+        System.out.println("Fim do main");
+    }
+
+    private static void metodo1() {
+        System.out.println("Ini do metodo1");
+        metodo2();
+        System.out.println("Fim do metodo1");
+    }
+
+    private static void metodo2() {
+        System.out.println("Ini do metodo2");
+        
+        throw new MinhaExcecao("Deu muito errado!");
+        //Precisamos falar para o Java pegar esse objeto, transformar em uma exceção e "jogar" na pilha. O verbo "jogar", em inglês,
+        //é "throw"! Então, vamos "jogar" o objeto a partir da referência exception
+        //O Java reconhece que, quando jogamos uma exceção, saímos abruptamente do código
+        
+      
+        //System.out.println("Fim do metodo2");    
+        }
+        
+    
+//Exceção : Para tratarmos uma exceção, é preciso sinalizar para a máquina virtual que isso pode acontecer,
+//por meio de um código específico (try). Assim, ela entenderá que deve tentar executar esse código, entre chaves ({})
+}

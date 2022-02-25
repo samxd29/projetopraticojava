@@ -1,0 +1,18 @@
+
+public class ContaReferencia {
+	public static void main(String[] args) {
+		conta primeiraConta = new conta();
+		primeiraConta.saldo = 300;
+		
+		System.out.println("Minha primeira conta é " + primeiraConta.saldo);
+		
+		conta segundaConta = primeiraConta;
+		
+		System.out.println("Minha segunda conta é " + segundaConta.saldo);
+		
+		if(primeiraConta == segundaConta) {
+			System.out.println("minha conta é igual");
+		}
+	}
+	
+}

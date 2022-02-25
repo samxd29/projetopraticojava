@@ -1,0 +1,21 @@
+public class TestaCondicional {
+	public static void main(String[] args) {
+		System.out.println("Testando as Condicionais");
+		int idade = 20;
+		//int quantidadePessoas = 3;
+		boolean acompanhantes = true;
+		
+		if (idade >=18 && acompanhantes == true) {
+			System.out.println("Seja bem vindo!");
+		} else {
+			System.out.println("Infelizmente você não pode entrar");
+		}
+		//if (idade >= 18 || quantidadePessoas>=2) {
+			//System.out.println("Seja Bem-vindo!");
+		//}else {
+			//System.out.println("Você não pode entrar");
+		//}
+	}
+	// Podemos utilizar o && ou || as condicionais;
+}
+

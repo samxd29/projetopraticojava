@@ -1,0 +1,7 @@
+
+public class TestaMetodo {
+	public static void main(String[] args) {
+		conta ContaSam = new conta();
+		ContaSam.deposita(50);
+	}
+}

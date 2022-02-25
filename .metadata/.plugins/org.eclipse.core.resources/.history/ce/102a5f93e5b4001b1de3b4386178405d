@@ -1,0 +1,5 @@
+public class testaExercicio {
+	public static void main(String[] args) {
+		System.out.println("Verifica imposto de renda");
+	}
+}
